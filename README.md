@@ -19,7 +19,7 @@
   Solo dopo libererà la `sedia` per il prossimo cliente liberando anche il `completionMutex` il quale avvertirà il Cliente che la sua caricatura è pronta.
   ```Java
   public void run() {
-		for(int i=1;i<=NUM_OF_ACTIONS;i++) //Attenzione l'artista va in starvation perché i Clienti dopo un tot di tempo se ne vanno e lui continuerà lo stesso
+		for(int i=1;i<=NUM_OF_ACTIONS;i++)
 		{
 			try {
 				chairsSemaphore.acquire();
